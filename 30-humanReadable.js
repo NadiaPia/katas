@@ -27,8 +27,7 @@ function humanReadable (seconds) {
     return [seconds / 3600, seconds % 3600 / 60, seconds % 60].map((v) => {
         v = Math.trunc(v).toString();
         return v.length < 2 ? "0" + v : v
-    }).join(":")
-
+    }).join(":");
     
 }
 console.log(humanReadable(45296));
